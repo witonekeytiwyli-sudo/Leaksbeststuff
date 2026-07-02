@@ -1,736 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover" />
-    <title>✨ PREMIUM STORE · exclusive digital goods</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>🔥 PREMIUM VAULT – LAST UNITS 50% OFF</title>
+    <link rel="preconnect" href="https://files.catbox.moe">
+    <link rel="preconnect" href="https://imagizer.imageshack.com">
+    <link rel="preconnect" href="https://i.postimg.cc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* ---------- CONVERSION OPTIMIZED – URGENCY, SCARCITY, SOCIAL PROOF ---------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(145deg, #f6f3ff 0%, #eae4fc 100%);
-            min-height: 100vh;
-            color: #1a1830;
-            padding: 1.2rem 1rem;
-            position: relative;
+            background: #000;
+            color: #f0f0f0;
+            font-size: 14px;
+            line-height: 1.5;
             overflow-x: hidden;
-        }
-
-        .blob {
-            position: fixed;
-            width: 80vmax;
-            height: 80vmax;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, rgba(180, 160, 255, 0.3), rgba(140, 200, 255, 0.15));
-            filter: blur(80px);
-            z-index: 0;
-            pointer-events: none;
-            animation: floatBlob 24s infinite alternate ease-in-out;
-        }
-        .blob1 {
-            top: -15vh;
-            left: -10vw;
-            background: radial-gradient(circle, #cdb4ff40, #a2d2ff20);
-        }
-        .blob2 {
-            bottom: -10vh;
-            right: -5vw;
-            width: 70vmax;
-            height: 70vmax;
-            background: radial-gradient(circle, #ffc8dd30, #bde0fe30);
-            animation-duration: 28s;
-            animation-delay: -5s;
-        }
-        @keyframes floatBlob {
-            0% {
-                transform: translate(0, 0) scale(1);
-            }
-            100% {
-                transform: translate(5%, 8%) scale(1.05);
-            }
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-
-        .header {
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background: rgba(255, 255, 255, 0.4);
-            border-radius: 40px;
-            padding: 1.2rem 1.5rem;
-            margin-bottom: 2.5rem;
-            box-shadow: 0 20px 40px -8px rgba(0, 10, 30, 0.12), 0 4px 12px rgba(0, 0, 0, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-        .logo h1 {
-            font-weight: 700;
-            font-size: 1.9rem;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #2a1b4d, #4b367c);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            line-height: 1.2;
-        }
-        .logo span {
-            font-weight: 400;
-            font-size: 0.8rem;
-            color: #4a4a6a;
-            letter-spacing: 0.3px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .telegram-badge {
-            background: #1e1e2f;
-            backdrop-filter: blur(8px);
-            padding: 0.6rem 1.5rem;
-            border-radius: 60px;
-            color: white;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 12px 18px -6px rgba(30, 30, 47, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.2s;
-            font-size: 0.95rem;
-            text-decoration: none;
-        }
-        .telegram-badge i {
-            font-size: 1.4rem;
-            color: #9bb1ff;
-        }
-        .telegram-badge:hover {
-            transform: scale(1.02);
-            box-shadow: 0 16px 24px -8px rgba(30, 30, 47, 0.35);
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .product-card {
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(14px) saturate(180%);
-            -webkit-backdrop-filter: blur(14px) saturate(180%);
-            border-radius: 32px;
-            padding: 1.2rem;
-            box-shadow: 0 18px 36px -12px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            transition: all 0.3s cubic-bezier(0.15, 0.75, 0.4, 1);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
-        }
-        .product-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.5s;
-            pointer-events: none;
-            z-index: 0;
+        }
+
+        .main-container {
+            max-width: 480px;
+            width: 94%;
+            margin: 0 auto;
+            padding: 0 8px 20px;
+        }
+
+        @media (min-width: 400px) {
+            .main-container { max-width: 500px; padding: 0 12px; }
+            .video-preview { height: 180px; }
+        }
+        @media (min-width: 550px) {
+            .main-container { max-width: 600px; }
+            .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+            .product-card { margin-bottom: 0; }
+            .video-preview { height: 150px; }
+        }
+
+        /* ----- TOP BAR – STICKY WITH CONTACT ----- */
+        .top-bar {
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(8px);
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #b71c1c;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .time-display { font-size: 14px; color: #aaa; font-weight: 500; }
+        .telegram-brand { display: flex; align-items: center; gap: 8px; color: #b71c1c; font-weight: 800; font-size: 16px; }
+        .telegram-brand i { font-size: 20px; }
+
+        /* ----- COUNTDOWN TIMER (URGENCY) ----- */
+        .countdown-bar {
+            background: #111;
+            padding: 10px;
+            border-radius: 50px;
+            margin: 12px 0;
+            border: 1px solid #b71c1c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+        .countdown-numbers {
+            background: #b71c1c;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        /* ----- SEARCH ----- */
+        .search-box {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 50px;
+            background: #111;
+            border: 1.5px solid #b71c1c;
+            color: white;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .search-box:focus { outline: none; box-shadow: 0 0 0 3px #b71c1c80; }
+
+        /* ----- PRODUCTS – CONVERSION DESIGN ----- */
+        .product-card {
+            background: #0c0c0c;
+            border-radius: 24px;
+            padding: 18px;
+            margin-bottom: 18px;
+            border: 1px solid #2a2a2a;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.9);
+            transition: transform 0.2s, border 0.2s, box-shadow 0.2s;
         }
         .product-card:hover {
-            transform: translateY(-6px) scale(1.01);
-            box-shadow: 0 28px 40px -14px #1e1e2f30, 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
-            border-color: rgba(255, 255, 255, 0.9);
-        }
-        .product-card:hover::after {
-            opacity: 0.5;
-        }
-        .card-content {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
+            border-color: #b71c1c;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px rgba(183,28,28,0.3);
         }
 
-        .img-wrapper {
-            border-radius: 22px;
-            overflow: hidden;
-            margin-bottom: 1.2rem;
-            background: #eaeef9;
-            box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            transition: box-shadow 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 180px;
-            max-height: 260px;
+        .video-preview {
             position: relative;
+            width: 100%;
+            height: 170px;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #1a1a1a; /* fallback if poster fails */
+            border: 1px solid #333;
+            margin-bottom: 14px;
         }
-        /* Placeholder enquanto a imagem carrega */
-        .img-wrapper .placeholder {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #eaeef9;
-            color: #7a78a0;
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            opacity: 1;
-            transition: opacity 0.4s;
-        }
-        .img-wrapper .placeholder i {
-            font-size: 2.2rem;
-            margin-right: 0.6rem;
-            opacity: 0.5;
-        }
-        .img-wrapper img {
+        .video-preview video {
             width: 100%;
             height: 100%;
-            object-fit: contain;
-            display: block;
-            transition: transform 0.5s ease, opacity 0.4s;
-            background: #f0f3fc;
-            position: relative;
-            z-index: 1;
-            opacity: 0; /* começa invisível, só aparece após carregar */
+            object-fit: cover;
         }
-        .img-wrapper img.loaded {
-            opacity: 1;
-        }
-        .img-wrapper img.error {
-            opacity: 0;
-        }
-        .product-card:hover .img-wrapper img {
-            transform: scale(1.02);
+        .video-preview .fallback-placeholder {
+            width: 100%;
+            height: 100%;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 13px;
         }
 
-        .product-name {
-            font-size: 1.35rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.4rem;
-            color: #1a1730;
+        .product-title { font-size: 20px; font-weight: 800; color: white; }
+        .product-discount {
+            background: #b71c1c;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 800;
+        }
+        .product-price-row {
+            margin: 14px 0;
             display: flex;
             align-items: baseline;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-        }
-        .price {
-            background: #1e1e2f;
-            padding: 0.25rem 0.9rem;
-            border-radius: 60px;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-            box-shadow: 0 6px 10px -4px #1e1e2f60;
-            border: 1px solid #ffffff30;
-            white-space: nowrap;
-        }
-        .description {
-            color: #2e2e4a;
-            line-height: 1.5;
-            margin: 0.6rem 0 1.2rem;
-            font-weight: 400;
-            font-size: 0.9rem;
-            flex: 1;
-        }
-
-        .action-group {
-            display: flex;
-            gap: 10px;
-            margin-top: auto;
+            gap: 12px;
             flex-wrap: wrap;
         }
-        .btn {
-            border: none;
-            background: white;
-            padding: 0.8rem 1rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(4px);
-            flex: 1 1 0;
-            min-width: 110px;
-            color: #1e1e2f;
-            text-decoration: none;
+        .product-old-price {
+            font-size: 18px;
+            color: #888;
+            text-decoration: line-through;
         }
-        .btn i {
-            font-size: 0.95rem;
+        .product-new-price {
+            font-size: 32px;
+            font-weight: 900;
+            color: #ff5555;
         }
-        .btn-preview {
-            background: rgba(240, 242, 255, 0.7);
-            backdrop-filter: blur(10px);
-        }
-        .btn-preview:hover {
-            background: #e0d9ff;
-            box-shadow: 0 10px 18px -8px #6d5f9e;
-            border-color: #cbbff0;
-        }
-        .btn-buy {
-            background: #1e1e2f;
-            color: white;
-            border: 1px solid #ffffff30;
-            box-shadow: 0 8px 16px -6px #1e1e2f;
-        }
-        .btn-buy i {
-            color: #b7c9ff;
-        }
-        .btn-buy:hover {
-            background: #2d2b4a;
-            transform: scale(1.02);
-            box-shadow: 0 12px 22px -8px #141322;
+        .stock-level {
+            background: #b71c1c20;
+            color: #ffaaaa;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 800;
+            border: 1px solid #b71c1c;
         }
 
-        /* ----- MODAL PREVIEW (only) ----- */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(20, 15, 40, 0.5);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.25s ease;
-            padding: 1rem;
-        }
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-card {
-            max-width: 720px;
+        /* ----- TELEGRAM BUTTON (MAX CONVERSION) ----- */
+        .product-btn {
+            background: #b71c1c !important;
+            color: white !important;
+            border: none !important;
+            box-shadow: 0 8px 20px rgba(183,28,28,0.6) !important;
+            transition: all 0.2s ease !important;
+            font-weight: 800;
+            border-radius: 50px !important;
+            font-size: 14px;
+            padding: 14px 14px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 40px;
-            padding: 1.5rem 1.5rem 1.8rem;
-            box-shadow: 0 40px 60px -16px #00000040;
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            transform: scale(0.95);
-            transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.1);
-            max-height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .product-btn:hover {
+            background: #d32f2f !important;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(183,28,28,0.9) !important;
+        }
+
+        /* ----- BUNDLE CARDS (HIGHLIGHT) ----- */
+        .bundles-section { margin: 20px 0; }
+        .bundle-card {
+            background: #0c0c0c;
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 2px solid #b71c1c;
+            box-shadow: 0 12px 28px rgba(183,28,28,0.4);
+        }
+        .bundle-badge {
+            display: inline-block;
+            background: #b71c1c;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .bundle-title {
+            font-size: 22px;
+            font-weight: 900;
+            color: #ff8888;
+            margin-bottom: 10px;
+        }
+        .include-item {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        .include-item i {
+            color: #b71c1c;
+            margin-right: 8px;
+        }
+
+        /* ----- PUSH NOTIFICATIONS (SIDE) ----- */
+        #notification-container {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 9999;
             display: flex;
             flex-direction: column;
+            gap: 8px;
+            max-width: 260px;
+            pointer-events: none;
         }
-        .active .modal-card {
-            transform: scale(1);
-        }
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.2rem;
-            flex-shrink: 0;
-        }
-        .modal-header h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1e1730;
-        }
-        .close-modal {
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: #3a2e5c;
-            width: 44px;
-            height: 44px;
-            border-radius: 30px;
+        .push-notification {
+            background: #111;
+            color: white;
+            border: 1px solid #b71c1c;
+            border-radius: 16px;
+            padding: 10px 14px;
+            font-size: 13px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(4px);
             display: flex;
             align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.5);
-            transition: background 0.2s;
+            gap: 8px;
+            pointer-events: auto;
+            font-weight: 500;
         }
-        .close-modal:hover {
-            background: rgba(255, 255, 255, 0.9);
-        }
-        .modal-body {
-            overflow-y: auto;
-            flex: 1;
-            padding-right: 4px;
-        }
-        .modal-body::-webkit-scrollbar {
-            width: 6px;
-        }
-        .modal-body::-webkit-scrollbar-track {
-            background: rgba(0, 0, 0, 0.05);
-            border-radius: 10px;
-        }
-        .modal-body::-webkit-scrollbar-thumb {
-            background: rgba(30, 30, 47, 0.2);
-            border-radius: 10px;
-        }
+        .push-notification i { color: #b71c1c; font-size: 16px; }
+        .push-notification strong { color: #ff8888; }
 
-        .preview-media {
-            width: 100%;
-            border-radius: 28px;
-            overflow: hidden;
-            background: #15121f10;
+        /* ----- TRUST BADGES ----- */
+        .trust-bar {
             display: flex;
+            justify-content: space-around;
+            margin: 20px 0 10px;
+            padding: 12px;
+            background: #111;
+            border-radius: 50px;
+            border: 1px solid #333;
+        }
+        .trust-item {
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            font-size: 11px;
+            color: #aaa;
         }
-        .preview-media img,
-        .preview-media video {
-            width: 100%;
-            height: auto;
-            max-height: 65vh;
-            object-fit: contain;
-            border-radius: 24px;
-        }
+        .trust-item i { color: #b71c1c; font-size: 18px; margin-bottom: 4px; }
 
-        .footer-wave {
-            margin-top: 3.5rem;
-            text-align: center;
-            opacity: 0.7;
-        }
-        .footer-wave i {
-            color: #5f4b8b;
-            font-size: 1.2rem;
-            margin: 0 4px;
-        }
+        .footer { text-align: center; color: #666; font-size: 11px; padding: 20px 0 8px; border-top: 1px solid #222; margin-top: 20px; }
 
         @media (max-width: 480px) {
-            body {
-                padding: 0.8rem 0.8rem;
-            }
-            .header {
-                padding: 1rem 1.2rem;
-                border-radius: 30px;
-            }
-            .logo h1 {
-                font-size: 1.6rem;
-            }
-            .telegram-badge {
-                padding: 0.5rem 1.2rem;
-                font-size: 0.85rem;
-            }
-            .product-card {
-                padding: 1rem;
-                border-radius: 26px;
-            }
-            .product-name {
-                font-size: 1.25rem;
-            }
-            .btn {
-                padding: 0.7rem 0.8rem;
-                font-size: 0.85rem;
-            }
-            .img-wrapper {
-                min-height: 150px;
-                max-height: 220px;
-            }
-            .modal-card {
-                padding: 1.2rem;
-                border-radius: 28px;
-            }
+            #notification-container { max-width: 220px; right: 10px; }
+            .countdown-numbers { font-size: 16px; }
         }
     </style>
 </head>
 <body>
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="time-display" id="current-time">22:14</div>
+        <div class="telegram-brand">
+            <i class="fab fa-telegram"></i> VIP CONTENT
+        </div>
+        <div style="width: 50px;"></div>
+    </div>
 
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <h1>ÆON·best folders</h1>
-                <span><i class="fas fa-sparkle" style="color:#9f87ff;"></i> instant preview · buy now</span>
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- COUNTDOWN TIMER (URGENCY) -->
+        <div class="countdown-bar">
+            <i class="fas fa-hourglass-half" style="color:#b71c1c;"></i>
+            <span>Lightning offer ends in</span>
+            <span class="countdown-numbers" id="countdown">10:00</span>
+        </div>
+
+        <!-- SEARCH -->
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 Find folders, incest, cp, teens..." autocomplete="off">
+
+        <!-- HERO + SOCIAL PROOF -->
+        <div style="text-align:center; margin:8px 0;">
+            <h1 style="font-size:30px; font-weight:900; background: linear-gradient(90deg, #ff5555, #b71c1c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🔥 PREMIUM FOLDERS</h1>
+            <div style="color:#ccc; font-weight:600;">🔥 +12.000 SATISFIED CUSTOMERS  • 30TB+ CONTENT</div>
+        </div>
+
+        <!-- TRUST BADGES -->
+        <div class="trust-bar">
+            <div class="trust-item"><i class="fas fa-bolt"></i><span>Immediate delivery</span></div>
+            <div class="trust-item"><i class="fas fa-lock"></i><span>Secure payment</span></div>
+            <div class="trust-item"><i class="fas fa-undo-alt"></i><span>Support 24/7</span></div>
+        </div>
+
+        <!-- ALL CONTENT ACCESS PROMO CARD (UPDATED HANDLE & MESSAGE) -->
+        <div class="product-card" style="border:2px solid #b71c1c;">
+            <div class="video-preview">
+                <video muted playsinline controls preload="metadata" poster="https://files.catbox.moe/qayvs1.jpeg">
+                    <source src="https://files.catbox.moe/kfy96e.mp4" type="video/mp4">
+                </video>
             </div>
-            <a href="https://t.me/mclarensellers" target="_blank" class="telegram-badge">
-                <i class="fab fa-telegram-plane"></i>
-                <span>@mclarensellers</span>
-                <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.75rem; opacity: 0.8;"></i>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <span style="background:#b71c1c; padding:5px 14px; border-radius:30px; font-size:13px; font-weight:800;">🔺 ALL CONTENT ACCESS</span>
+                <span class="stock-level"><i class="fas fa-fire"></i> ♾️</span>
+            </div>
+            <div style="margin-bottom:12px;">
+                <div><i class="fas fa-check-circle" style="color:#b71c1c;"></i> ALL VIP GROUPS + CHANNELS</div>
+                <div><i class="fas fa-check-circle" style="color:#b71c1c;"></i> 30TB+ • 700,000+ FOLDERS</div>
+                <div><i class="fas fa-check-circle" style="color:#b71c1c;"></i> UPDATES EVERY WEEK WITH NEW CONTENT</div>
+            </div>
+            <div class="product-price-row">
+                <span class="product-old-price">$400</span>
+                <span class="product-new-price">$200</span>
+                <span style="background:#b71c1c; padding:4px 12px; border-radius:30px;">-38%</span>
+            </div>
+            <a href="https://t.me/mclarensellers?text=I%20want%20to%20buy%20ALL%20CONTENT%20ACCESS%20for%20%24200.%20Please%20send%20payment%20instructions." target="_blank" class="product-btn">
+                <i class="fab fa-telegram"></i> BUY NOW $200
             </a>
-        </header>
+        </div>
 
-        <div class="product-grid" id="productGrid"></div>
+        <!-- BUNDLES (Special offers) with updated Telegram links & English messages -->
+        <div class="bundles-section">
+            <h2 style="color:#fff; margin-bottom:12px;"><i class="fas fa-gift" style="color:#b71c1c;"></i> 🔥 VIP PACKAGES (BEST STUFF)</h2>
+            <div class="bundle-card">
+                <span class="bundle-badge">VIP ALL ACCESS</span>
+                <h4 class="bundle-title">ALL VIP GROUPS</h4>
+                <div class="include-item"><i class="fas fa-check-circle"></i> VIP CP, R@PE, INCEST</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> GROUP VIP CP</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> SKI 13-17 PYT</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> SKI HIGH SCHOOL PYT</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> + ALL VIP GROUPS</div>
+                <div class="product-price-row">
+                    <span class="product-old-price">$200</span>
+                    <span class="product-new-price">$100</span>
+                </div>
+                <a href="https://t.me/mclarensellers?text=I%20want%20to%20buy%20ALL%20VIP%20GROUPS%20for%20%24100.%20Please%20send%20payment%20instructions." target="_blank" class="product-btn">BUY NOW $100</a>
+            </div>
+            <div class="bundle-card">
+                <span class="bundle-badge">🔥 MOST BOUGHT</span>
+                <h4 class="bundle-title">ULTIMATE TEEN COLLECTION</h4>
+                <div class="include-item"><i class="fas fa-check-circle"></i> HIGH SCHOOL THOTS</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> TEENS AND DOG</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> 13-17 TEEN</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> BLACK TEENS +6 BONUS</div>
+                <div class="product-price-row">
+                    <span class="product-old-price">$150</span>
+                    <span class="product-new-price">$75</span>
+                </div>
+                <a href="https://t.me/mclarensellers?text=I%20want%20to%20buy%20ULTIMATE%20TEEN%20COLLECTION%20for%20%2475.%20Please%20send%20payment%20instructions." target="_blank" class="product-btn">BUY NOW $75</a>
+            </div>
+            <div class="bundle-card">
+                <span class="bundle-badge">BEST COST</span>
+                <h4 class="bundle-title">MASTER CP COLLECTION</h4>
+                <div class="include-item"><i class="fas fa-check-circle"></i> CP 1-5 (ALL CP FOLDERS)</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> CP FAMILY</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> CP FATHER AND DAUGHTER</div>
+                <div class="include-item"><i class="fas fa-check-circle"></i> REAL INCEST +5 BONUS</div>
+                <div class="product-price-row">
+                    <span class="product-old-price">$200</span>
+                    <span class="product-new-price">$100</span>
+                </div>
+                <a href="https://t.me/mclarensellers?text=I%20want%20to%20buy%20MASTER%20CP%20COLLECTION%20for%20%24100.%20Please%20send%20payment%20instructions." target="_blank" class="product-btn">BUY NOW $100</a>
+            </div>
+        </div>
 
-        <div class="footer-wave">
-            <i class="fas fa-circle" style="font-size: 0.3rem; vertical-align: middle;"></i>
-            <i class="fas fa-gem"></i>
-            <i class="fas fa-circle" style="font-size: 0.3rem; vertical-align: middle;"></i>
+        <!-- PRODUCT GRID (dynamic) -->
+        <div id="products-container" class="products-grid"></div>
+
+        <!-- FOOTER PROMO -->
+        <div style="background: #0a0a0a; border-radius: 30px; padding: 20px; margin-top: 20px; border: 2px solid #b71c1c; text-align:center;">
+            <span style="font-size:22px; font-weight:900; color:#ff8888;">⏳ PROMO DAY</span>
+            <p style="margin:10px 0; color:#ccc;">ALL VIP GROUPS + 65 PREMIUM FOLDERS</p>
+            <a href="https://t.me/mclarensellers?text=I%20want%20to%20buy%20the%20FLASH%20PACKAGE%20for%20%2490.%20Please%20send%20payment%20instructions." target="_blank" class="product-btn" style="background:#b71c1c; font-size:18px;">
+                <i class="fab fa-telegram"></i> BUY NOW $90
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2025 PREMIUM FOLDERS · Telegram: @mclarensellers · 18+ · instant delivery
         </div>
     </div>
 
-    <!-- MODAL: Preview only -->
-    <div class="modal-overlay" id="previewModal">
-        <div class="modal-card">
-            <div class="modal-header">
-                <h3 id="modalTitle">Preview</h3>
-                <button class="close-modal" id="closePreviewBtn"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="modal-body">
-                <div class="preview-media" id="previewContent"></div>
-            </div>
-        </div>
-    </div>
+    <!-- NOTIFICATION CONTAINER -->
+    <div id="notification-container"></div>
 
     <script>
-        (function() {
-            "use strict";
+        // === CONFIGURATION ===
+        const TELEGRAM_USERNAME = "mclarensellers";   // updated handle
 
-            // --------------------------------------------------------------
-            // 1. PRODUCTS
-            // --------------------------------------------------------------
-            const products = [
-                { id: 1, name: "MOM AND SON", price: 30, description: "MOM AND SON GET FUCKED BEST STUFF 30GB.",
-                    image: "https://files.catbox.moe/7kzn3k.jpeg",
-                    preview: "https://files.catbox.moe/gcjnyr.mp4" },
-                { id: 2, name: "AMELIA BLONDE", price: 30, description: "50GB REAL GIRL , SEX AND CP.",
-                    image: "https://files.catbox.moe/v67hrk.jpg",
-                    preview: "https://files.catbox.moe/s26slb.mp4" },
-                { id: 3, name: "ALL TEENS 1TB", price: 100, description: "MOORE THAN 120.000 FILES OF TEENS RARE.",
-                    image: "https://files.catbox.moe/hyci8i.jpg",
-                    preview: "https://files.catbox.moe/ef13ye.mp4" },
-                { id: 4, name: "RAPE TEEN", price: 30, description: "RARE RAPE TEEN / 20GB NEW STUFF .",
-                    image: "https://files.catbox.moe/am58we.jpg",
-                    preview: "https://files.catbox.moe/ag9kqi.mp4" },
-                { id: 5, name: "OMEGLE FULL", price: 30, description: "MORE THAN 120GB.",
-                    image: "https://files.catbox.moe/tbhcs2.jpeg",
-                    preview: "https://files.catbox.moe/2vpqlk.mp4" },
-                { id: 6, name: "HIGH SCHOOL TEEN", price: 30, description: "HIGH SCHOOL MORE THAN 35GB.",
-                    image: "https://files.catbox.moe/ho7r4b.jpg",
-                    preview: "https://files.catbox.moe/74sdmx.mp4" },
-                { id: 7, name: "ALL CONTENT 30TB", price: 200,
-                    description: "ALL CP / ALL TEENS / ALL VIP CHANNELS AND UPDATES EVERY WEEK.",
-                    image: "https://files.catbox.moe/fm22ji.jpeg",
-                    preview: "https://files.catbox.moe/kfy96e.mp4" },
-                { id: 8, name: "LIZZY AND BRO", price: 30, description: "MORE THAN 45GB.",
-                    image: "https://files.catbox.moe/5zsmkh.jpeg",
-                    preview: "https://files.catbox.moe/rjuesd.mp4" },
-                { id: 9, name: "CP 1", price: 30, description: " BEST CP MORE THAN 25GB.",
-                    image: "https://files.catbox.moe/os8cmm.jpeg",
-                    preview: "https://files.catbox.moe/ydlolc.mp4" },
-                { id: 10, name: "CP 2", price: 30, description: "MORE THAN 30GB.",
-                    image: "https://files.catbox.moe/gg3hzo.jpeg",
-                    preview: "https://files.catbox.moe/405t3c.mp4" },
-                { id: 11, name: "PREMIUM VIP 8-17🔥", price: 30, description: "MORE THAN 1590 VIDEOS.",
-                    image: "https://files.catbox.moe/xc9m0a.png",
-                    preview: "https://files.catbox.moe/66bgbc.mp4" },
-                { id: 12, name: "DESIRE GARCIA", price: 30, description: "MORE THAN 30GB.",
-                    image: "https://files.catbox.moe/9u1uvi.jpeg",
-                    preview: "https://files.catbox.moe/d0xmwr.mp4" },
-                { id: 13, name: "INAVAK AND BRO", price: 30, description: "MORE THAN 45GB.",
-                    image: "https://files.catbox.moe/8m6572.jpeg",
-                    preview: "https://files.catbox.moe/fj4wps.mp4" },
-                { id: 14, name: "ALL CP 2TB", price: 120,
-                    description: "ALL 40 CP FOLDERS RARE AND ALL VIP GROUP.",
-                    image: "https://files.catbox.moe/q0eoxu.jpeg",
-                    preview: "https://files.catbox.moe/vmbznp.mp4" },
-                { id: 15, name: "AYUMI TEEN", price: 30, description: "POSI LEAKS BEST TEEN MORE THAN 20GB.",
-                    image: "https://files.catbox.moe/6n36b7.png",
-                    preview: "https://files.catbox.moe/e0hrd0.mp4" },
-                { id: 16, name: "AVA SHIT", price: 30, description: "SNAPGOD SHIT MORE THAN 30GB.",
-                    image: "https://files.catbox.moe/j0yxw0.jpeg",
-                    preview: "https://files.catbox.moe/3jf9de.mp4" },
-                { id: 17, name: "13-17 TEEN", price: 30, description: "MORE THAN 5900 VIDEOS.",
-                    image: "https://files.catbox.moe/9vm6so.png",
-                    preview: "https://files.catbox.moe/b3aggs.mp4" }
-            ];
+        // ----- PRODUCT DATA (same as original, all descriptions already english) -----
+        const products = [
+            { id:1, name:"MOM AND SON😋💜", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/gcjnyr.mp4", image:"https://files.catbox.moe/rcu03m.jpeg", description:["REAL GIRLS","YOUNG BOY","MOM AND SON","228 FILES","12.45 GB"], category:"teen", discount:"-50%", purchaseCount:42, stock:9 },
+            { id:2, name:"LIZZY AND BRO🔥", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/rjuesd.mp4", image:"https://imagizer.imageshack.com/img921/5505/LKytJu.jpg", description:["BLACKMAIL VIDEOS","TRAINING VIDEOS","INCEST"], category:"teen", discount:"-50%", purchaseCount:28, stock:14 },
+            { id:3, name:"ALL CP COLLECTION", price:120, oldPrice:190, videoPreview:"https://files.catbox.moe/fw5lgw.mp4", image:"https://files.catbox.moe/q0eoxu.jpeg", description:["CP 2GB","CP 4GB","Premium content","CP VIP 8GB"], category:"cp", discount:"-50%", purchaseCount:56, stock:6 },
+            { id:4, name:"ALL TEENS COLLECTION😈", price:95, oldPrice:130, videoPreview:"https://files.catbox.moe/7tzb79.MP4", image:"https://files.catbox.moe/qayvs1.jpeg", description:["OVER 18689 VIDEOS","200+ SUBFOLDERS","INCEST","ALL TEENS"], category:"teen", discount:"-50%", purchaseCount:73, stock:11 },
+            { id:5, name:"SNAPGOD FULL EDITION", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/x0q7uy.mov", image:"https://imagizer.imageshack.com/img921/9696/oQEkoe.jpg", description:["BLACKMAIL VIDEOS","INCEST TEENS","40GB","TRAINING"], category:"teen", discount:"-50%", purchaseCount:19, stock:22 },
+            { id:6, name:"OMEGLE FULL💜", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/9dpnw1.mp4", image:"https://imagizer.imageshack.com/img924/1222/5M0MZ5.jpg", description:["140GB+","FULL CONTENT","RARE NEW COLLECTION","UPDATES"], category:"teen", discount:"-50%", purchaseCount:31, stock:17 },
+            { id:7, name:"VIP YOUNG & CP", price:40, oldPrice:130, videoPreview:"https://files.catbox.moe/7ax8zl.mp4", image:"https://files.catbox.moe/9ub4vc.webp", description:["Premium folders","13-17, NEW CP","1.6TB"], category:"teen", discount:"-50%", purchaseCount:24, stock:8 },
+            { id:8, name:"SKI HIGH SCHOOL PYT", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/74sdmx.mp4", image:"https://files.catbox.moe/why1n3.webp", description:["HIGH SCHOOL","340GB","13-17y","LIGHTSKIN"], category:"teen", discount:"-50%", purchaseCount:88, stock:4 },
+            { id:9, name:"IZZY AND DOG🔥‼️", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/ws6eyv.mp4", image:"https://files.catbox.moe/4av8s1.webp", description:["BLACKMAIL","REAL GIRL","SOLO STUFF"], category:"teen", discount:"-50%", purchaseCount:36, stock:12 },
+            { id:10, name:"DARKZEID🔞", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/t97g7s.mp4", image:"https://files.catbox.moe/35af27.webp", description:["ALL BM VIDEOS","CAMERA UPLOADS","20GB"], category:"teen", discount:"-50%", purchaseCount:17, stock:19 },
+            { id:11, name:"VIP CP 8-13Y🔥", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/66bgbc.mp4", image:"https://files.catbox.moe/xc9m0a.png", description:["1500+ VIDEOS","AGES 8-13","RARE"], category:"teen", discount:"-50%", purchaseCount:29, stock:21 },
+            { id:12, name:"INVAKA💀", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/1lxzdw.mp4", image:"https://files.catbox.moe/8m6572.jpeg", description:["540+ VIDS","REAL GIRL","FULL HD","25GB"], category:"teen", discount:"-50%", purchaseCount:41, stock:13 },
+            { id:13, name:"AVA SHIT", price:35, oldPrice:50, videoPreview:"https://files.catbox.moe/3jf9de.mp4", image:"https://files.catbox.moe/xupz6u.webp", description:["BM VIDEOS","INCEST","CP","350+ VIDEOS"], category:"cp", discount:"-50%", purchaseCount:37, stock:10 },
+            { id:15, name:"MONKEYAPP🎓", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/as6vwa.mp4", image:"https://files.catbox.moe/4cy5ej.jpeg", description:["AGES 13-17","DORM ROOM","400+ FILES","20GB"], category:"teen", discount:"-50%", purchaseCount:22, stock:25 },
+            { id:16, name:"DESIRE GARCIA", price:35, oldPrice:50, videoPreview:"https://files.catbox.moe/sgg68f.mp4", image:"https://files.catbox.moe/nf0esh.webp", description:["HIGH QUALITY","RARE","340+ VIDEOS","56GB"], category:"teen", discount:"-50%", purchaseCount:45, stock:7 },
+            { id:17, name:"BLACKMAIIL FULL💦", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/nuegam.mp4", image:"https://files.catbox.moe/dlk7kl.webp", description:["AGES 14-17","870+ VIDS","200GB"], category:"teen", discount:"-50%", purchaseCount:58, stock:5 },
+            { id:19, name:"BABY ASHLEY", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/u77i4e.mp4", image:"https://files.catbox.moe/rz4xqi.webp", description:["100% YOUNG GIRL","LOCKER ROOM","300+ FILES","12GB"], category:"teen", discount:"-50%", purchaseCount:49, stock:16 },
+            { id:21, name:"AMELIA BLONDE🔥", price:40, oldPrice:50, videoPreview:"https://files.catbox.moe/zn98nt.mp4", image:"https://files.catbox.moe/p009gc.jpeg", description:["800+ VIDEOS","AGE 11","30GB","REAL GIRL"], category:"teen", discount:"-50%", purchaseCount:38, stock:9 },
+            { id:22, name:"CP-1", price:45, oldPrice:70, videoPreview:"https://files.catbox.moe/1t6sgb.mp4", image:"https://files.catbox.moe/6rb74v.jpeg", description:["RARE","AGES 9-11","300+ VIDEOS","38GB"], category:"cp", discount:"-50%", purchaseCount:24, stock:11 },
+            { id:23, name:"CP-2", price:40, oldPrice:70, videoPreview:"https://files.catbox.moe/v99ldo.mp4", image:"https://files.catbox.moe/palmho.webp", description:["BEST C-P","HIGH QUALITY","350+ VIDEOS","20GB"], category:"cp", discount:"-50%", purchaseCount:42, stock:7 },
+            { id:24, name:"ANXIOUS PANDA", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/nvpys0.mp4", image:"https://files.catbox.moe/p5t7u9.webp", description:["AGES 13-16","200+ VIDS","BEHIND SCENES","35GB"], category:"teen", discount:"-50%", purchaseCount:19, stock:23 },
+            { id:25, name:"REAL INCEST 💀", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/ef13ye.mp4", image:"https://files.catbox.moe/wronh2.jpeg", description:["1000+","AGES 9","50GB","HD"], category:"cp", discount:"-50%", purchaseCount:57, stock:6 },
+            { id:26, name:"XIMENA TEEN", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/9393pu.mp4", image:"https://files.catbox.moe/9gbnyu.jpeg", description:["RARE TEEN","12y","HIGH QUALITY","44GB"], category:"teen", discount:"-50%", purchaseCount:31, stock:14 },
+            { id:27, name:"CP-3", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/f4c6pa.mp4", image:"https://files.catbox.moe/chgfc9.jpeg", description:["VIP CP","AGES 8-12","500+ VIDEOS","50GB"], category:"cp", discount:"-50%", purchaseCount:45, stock:5 },
+            { id:28, name:"CP-4", price:50, oldPrice:50, videoPreview:"https://files.catbox.moe/mdlg49.mp4", image:"https://files.catbox.moe/g2dmca.jpeg", description:["CP VIDEOS","AGES 9-13","300+","35GB"], category:"cp", discount:"-50%", purchaseCount:38, stock:12 },
+            { id:32, name:"CP-5", price:50, oldPrice:60, videoPreview:"https://files.catbox.moe/96suzn.mp4", image:"https://files.catbox.moe/kzmjxh.png", description:["1000+ VIDEOS","AGES 6-9","85GB","PREMIUM"], category:"cp", discount:"-50%", purchaseCount:52, stock:4 },
+            { id:33, name:"VIP OMEGLE", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/2a0jr8.mp4", image:"https://files.catbox.moe/4c9j27.png", description:["REAL BLACKMAIL","650+ FILES","42GB","HD"], category:"teen", discount:"-50%", purchaseCount:41, stock:18 },
+            { id:34, name:"13-17 TEEN 🔥", price:35, oldPrice:60, videoPreview:"https://files.catbox.moe/6n9mw5.mp4", image:"https://files.catbox.moe/9vm6so.png", description:["45GB+","RARE","UPDATED WEEKLY","LIFETIME"], category:"teen", discount:"-50%", purchaseCount:67, stock:3 },
+            { id:35, name:"VIP PREMIUM CP", price:45, oldPrice:90, videoPreview:"https://files.catbox.moe/u5keed.mov", image:"https://files.catbox.moe/pfbgc4.jpeg", description:["AGES 12-15","500+ VIDEOS","45GB","HD"], category:"teen", discount:"-50%", purchaseCount:41, stock:15 },
+            { id:36, name:"CP FAMILY", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/ai5tgd.mp4", image:"https://files.catbox.moe/r7dyjh.png", description:["REAL FAMILY","BROTHER/SISTER","PARENT/CHILD","35GB"], category:"cp", discount:"-50%", purchaseCount:53, stock:8 },
+            { id:37, name:"RAPE TEEN😊", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/1glajm.mp4", image:"https://files.catbox.moe/k1c65n.png", description:["700+ VIDS","REAL GIRLS CRYING","FORCED","50GB"], category:"cp", discount:"-50%", purchaseCount:38, stock:9 },
+            { id:38, name:"CP FATHER AND DAUGHTER🙈", price:40, oldPrice:60, videoPreview:"https://files.catbox.moe/g66z26.mp4", image:"https://files.catbox.moe/qtl2qm.png", description:["REAL CP","60GB+","HD","11-15"], category:"cp", discount:"-50%", purchaseCount:29, stock:10 },
+            { id:39, name:"TEENS HIGH SCHOOL💕", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/1iwj9g.mp4", image:"https://files.catbox.moe/59n7c0.png", description:["AGES 12-14","400+ VIDS","25GB","PRIVATE"], category:"teen", discount:"-50%", purchaseCount:48, stock:13 },
+            { id:40, name:"EMMI SELLER😍", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/9b9kgj.mp4", image:"https://files.catbox.moe/oiou5b.png", description:["434 VIDEOS","RARE","500+ FILES","40GB"], category:"teen", discount:"-50%", purchaseCount:36, stock:11 },
+            { id:41, name:"MYSTERY NELSON😈", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/70n17z.mp4", image:"https://files.catbox.moe/4rpcpr.png", description:["800+ VIDEOS","12y","RARE FOLDER","65GB"], category:"teen", discount:"-50%", purchaseCount:52, stock:5 },
+            { id:42, name:"AYUMI TEEN❤️", price:35, oldPrice:50, videoPreview:"https://files.catbox.moe/e0hrd0.mp4", image:"https://files.catbox.moe/6n36b7.png", description:["1000+ CP VIDEOS","AGE 12","80GB","PREMIUM"], category:"teen", discount:"-50%", purchaseCount:44, stock:12 },
+            { id:43, name:"ENGLISH TEEN", price:30, oldPrice:50, videoPreview:"https://files.catbox.moe/927sbu.mp4", image:"https://files.catbox.moe/tncx1p.png", description:["HIGH QUALITY","70GB+","CP","PRIORITY"], category:"teen", discount:"-50%", purchaseCount:31, stock:16 },
+            { id:44, name:"VIP GROUP CP", price:35, oldPrice:70, videoPreview:"https://files.catbox.moe/4yiofh.mp4", image:"https://files.catbox.moe/ybwlhg.png", description:["EXCLUSIVE","PREMIUM","950+ VIDEOS","35GB"], category:"teen", discount:"-50%", purchaseCount:28, stock:20 },
+            { id:45, name:"ELLE GOODMAN", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/f2rffg.mp4", image:"https://files.catbox.moe/x06vit.png", description:["MOM & SON","RARE","500+ FILES","45GB"], category:"teen", discount:"-50%", purchaseCount:35, stock:14 },
+            { id:46, name:"SKI WHITE PYT", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/ca236c.mp4", image:"https://files.catbox.moe/vl8nay.png", description:["EXCLUSIVE MODEL","FULL SETS","200+ PHOTOS","5700+ VIDEOS","15GB"], category:"teen", discount:"-50%", purchaseCount:22, stock:18 },
+            { id:47, name:"JUJU BOOKS", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/e7cok8.mp4", image:"", description:["EXCLUSIVE","PREMIUM","400+ FILES","30GB","HD"], category:"teen", discount:"-50%", purchaseCount:41, stock:9 },
+            { id:48, name:"MASHA BABKO", price:25, oldPrice:50, videoPreview:"https://files.catbox.moe/ckcrgq.mp4", image:"", description:["EXCLUSIVE","FULL SETS","670+ VIDEOS","20GB"], category:"teen", discount:"-50%", purchaseCount:19, stock:24 },
+            { id:49, name:"SOPHIE RAIN", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/xrqoob.mp4", image:"https://files.catbox.moe/22hlq8.png", description:["PREMIUM","EXCLUSIVE VIDEOS","300+ FILES","35GB"], category:"teen", discount:"-50%", purchaseCount:33, stock:11 },
+            { id:50, name:"ELLIE LEEN", price:25, oldPrice:50, videoPreview:"https://files.catbox.moe/jkohjy.mp4", image:"https://files.catbox.moe/hgfvko.jpeg", description:["EXCLUSIVE MODEL","FULL COLLECTION","250+ FILES","25GB"], category:"teen", discount:"-50%", purchaseCount:26, stock:22 },
+            { id:51, name:"SKI BLACK PYT", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/6yi17h.mp4", image:"https://files.catbox.moe/vhfoqp.jpeg", description:["EXCLUSIVE","4500+ VIDEOS","40GB","HD","RARE"], category:"teen", discount:"-50%", purchaseCount:47, stock:6 },
+            { id:52, name:"ASH", price:25, oldPrice:50, videoPreview:"https://files.catbox.moe/5s5km9.mp4", image:"https://files.catbox.moe/ipzgsh.jpeg", description:["EXCLUSIVE MODEL","FULL SETS","180+ FILES","18GB"], category:"teen", discount:"-50%", purchaseCount:21, stock:27 },
+            { id:53, name:"SAVANNAH", price:30, oldPrice:60, videoPreview:"https://files.catbox.moe/3ru57l.mp4", image:"https://files.catbox.moe/7rwdpb.jpeg", description:["PREMIUM","EXCLUSIVE VIDEOS","350+ FILES","32GB"], category:"teen", discount:"-50%", purchaseCount:38, stock:8 }
+        ];
 
-            const TELEGRAM_USERNAME = "mclarensellers";
+        const BUYER_NAMES = ["James","Michael","Robert","John","David","William","Richard","Joseph","Thomas","Charles","Daniel","Matthew","Anthony","Donald","Mark","Paul","Steven","Andrew","Kenneth","Joshua","Kevin","Brian","George","Edward","Ronald","Timothy","Jason","Jeffrey","Ryan","Jacob","Gary","Nicholas","Eric","Jonathan","Stephen","Larry","Justin","Scott","Brandon","Benjamin","Samuel","Frank","Gregory","Raymond","Patrick","Alexander","Jack","Dennis","Jerry","Tyler","Aaron","Henry","Douglas","Peter","Jose","Adam","Zachary","Nathan","Chris","Juan","Christian"];
 
-            // --------------------------------------------------------------
-            // 2. HELPERS
-            // --------------------------------------------------------------
-            function isVideoUrl(url) {
-                if (!url) return false;
-                const ext = ['.mp4', '.webm', '.mov', '.avi', '.mkv', '.ogg'];
-                return ext.some(e => url.toLowerCase().includes(e));
+        // ----- MEDIA FALLBACK: if video fails, replace with placeholder div
+        function handleVideoError(video) {
+            const container = video.parentNode;
+            if (!container) return;
+            // Avoid double replacement
+            if (container.querySelector('.fallback-placeholder')) return;
+            const poster = video.poster || '';
+            const fallbackDiv = document.createElement('div');
+            fallbackDiv.className = 'fallback-placeholder';
+            fallbackDiv.style.width = '100%';
+            fallbackDiv.style.height = '100%';
+            fallbackDiv.style.background = '#222';
+            fallbackDiv.style.display = 'flex';
+            fallbackDiv.style.alignItems = 'center';
+            fallbackDiv.style.justifyContent = 'center';
+            fallbackDiv.style.color = '#888';
+            fallbackDiv.style.fontSize = '13px';
+            fallbackDiv.innerText = '⚠️ Preview not available';
+            container.innerHTML = ''; // remove video
+            container.appendChild(fallbackDiv);
+        }
+
+        // Attach error listeners to all videos on the page
+        function attachVideoFallback() {
+            document.querySelectorAll('.video-preview video').forEach(video => {
+                // Remove any existing listener to avoid duplicates
+                video.removeEventListener('error', video._errorHandler);
+                const handler = () => handleVideoError(video);
+                video.addEventListener('error', handler);
+                video._errorHandler = handler; // store for potential removal
+            });
+        }
+
+        // ----- RENDER PRODUCTS (with English labels) -----
+        function renderAllProducts(filteredProducts = null) {
+            const container = document.getElementById('products-container');
+            const prods = filteredProducts || products;
+            if (!prods.length) {
+                container.innerHTML = '<div style="color:#888; padding:20px; text-align:center;">⛔ No products found</div>';
+                attachVideoFallback(); // still run for static videos
+                return;
             }
+            let html = '';
+            prods.forEach(p => {
+                // If image is empty, use a base64 placeholder
+                const poster = p.image ? `poster="${p.image}"` : 'poster="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%23333\'/%3E%3Ctext x=\'40\' y=\'160\' fill=\'%23777\' font-size=\'20\'%3ENo preview%3C/text%3E%3C/svg%3E"';
+                const stockLabel = p.stock < 10 ?
+                    `<span class="stock-level"><i class="fas fa-exclamation-triangle"></i> Only ${p.stock} left</span>` :
+                    `<span class="stock-level"><i class="fas fa-box"></i> ${p.stock} in stock</span>`;
+               
+                const msg = `I want to buy ${p.name} for $${p.price}. Please send payment instructions.`;
+                const telegramUrl = `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(msg)}`;
 
-            function openTelegramDM(message) {
-                const encoded = encodeURIComponent(message);
-                const link = `https://t.me/${TELEGRAM_USERNAME}?text=${encoded}`;
-                window.open(link, '_blank');
-            }
+                html += `<div class="product-card">
+                    <div class="video-preview">
+                        <video muted playsinline controls preload="metadata" ${poster}>
+                            <source src="${p.videoPreview}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span class="product-title">${p.name}</span>
+                        <span class="product-discount">${p.discount}</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin:8px 0;">
+                        <span><i class="fas fa-fire" style="color:#b71c1c;"></i> ${p.purchaseCount} purchases</span>
+                        ${stockLabel}
+                    </div>
+                    <div>${p.description.map(d => `<div style="font-size:13px; margin-bottom:3px;"><i class="fas fa-check" style="color:#b71c1c; margin-right:6px;"></i> ${d}</div>`).join('')}</div>
+                    <div class="product-price-row">
+                        <span class="product-old-price">$${p.oldPrice}</span>
+                        <span class="product-new-price">$${p.price}</span>
+                    </div>
+                    <a href="${telegramUrl}" target="_blank" class="product-btn">
+                        <i class="fab fa-telegram"></i> BUY NOW $${p.price}
+                    </a>
+                </div>`;
+            });
+            container.innerHTML = html;
+            attachVideoFallback(); // attach to newly added videos
+        }
 
-            function buildPurchaseMessage(product) {
-                const priceFmt = product.price.toFixed(2);
-                return (
-                    `Hello! I am interested in buying *${product.name}* for $${priceFmt}. ` +
-                    `Could you please let me know the available payment methods? Thank you!`
+        // ----- SEARCH FUNCTIONALITY -----
+        function searchProducts() {
+            clearTimeout(window.searchDelay);
+            window.searchDelay = setTimeout(() => {
+                const term = document.getElementById('searchInput').value.toLowerCase().trim();
+                if (!term) return renderAllProducts();
+                const filtered = products.filter(p =>
+                    p.name.toLowerCase().includes(term) ||
+                    p.description.some(d => d.toLowerCase().includes(term)) ||
+                    p.category.toLowerCase().includes(term)
                 );
-            }
+                renderAllProducts(filtered);
+            }, 150);
+        }
 
-            // --------------------------------------------------------------
-            // 3. RENDER PRODUCTS (com placeholders robustos)
-            // --------------------------------------------------------------
-            const grid = document.getElementById('productGrid');
+        // ----- PUSH NOTIFICATIONS -----
+        function addRandomNotification() {
+            const container = document.getElementById('notification-container');
+            if (!container) return;
+            const randomProduct = products[Math.floor(Math.random() * products.length)];
+            const randomBuyer = BUYER_NAMES[Math.floor(Math.random() * BUYER_NAMES.length)];
+            const price = randomProduct.price;
+            const productName = randomProduct.name.split(' ')[0] + '...';
+           
+            const notif = document.createElement('div');
+            notif.className = 'push-notification';
+            notif.innerHTML = `<i class="fas fa-cart-arrow-down"></i> <strong>${randomBuyer}</strong> bought <strong>${productName}</strong> for $${price}`;
+            container.appendChild(notif);
+            setTimeout(() => notif.style.opacity = '1', 10);
+            setTimeout(() => {
+                notif.style.opacity = '0';
+                setTimeout(() => notif.remove(), 300);
+            }, 5000);
+        }
 
-            function renderProducts() {
-                if (!grid) return;
-                let html = '';
-                products.forEach(p => {
-                    const priceFmt = p.price.toFixed(2);
-                    const previewBtn = (p.preview && p.preview.trim() !== '') ?
-                        `<button class="btn btn-preview" data-preview='${JSON.stringify({name:p.name, url:p.preview})}'><i class="fas fa-eye"></i> Preview</button>` :
-                        '';
-
-                    html += `
-                <div class="product-card" data-product-id="${p.id}">
-                  <div class="card-content">
-                    <div class="img-wrapper">
-                      <span class="placeholder"><i class="fas fa-image"></i> loading...</span>
-                      <img src="${p.image}" alt="${p.name}" loading="lazy"
-                           onload="this.classList.add('loaded'); this.previousElementSibling.style.opacity='0';"
-                           onerror="this.classList.add('error'); this.previousElementSibling.innerHTML='<i class=\\'fas fa-exclamation-triangle\\'></i> image failed'; this.previousElementSibling.style.opacity='1';" />
-                    </div>
-                    <div class="product-name">
-                      ${p.name}
-                      <span class="price">$${priceFmt}</span>
-                    </div>
-                    <p class="description">${p.description}</p>
-                    <div class="action-group">
-                      ${previewBtn}
-                      <button class="btn btn-buy" data-product='${JSON.stringify({id:p.id, name:p.name, price:p.price})}'>
-                        <i class="fas fa-bolt"></i> Buy now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              `;
-                });
-                grid.innerHTML = html;
-            }
-            renderProducts();
-
-            // --------------------------------------------------------------
-            // 4. MODAL PREVIEW
-            // --------------------------------------------------------------
-            const previewModal = document.getElementById('previewModal');
-            const previewTitle = document.getElementById('modalTitle');
-            const previewContent = document.getElementById('previewContent');
-            const closePreview = document.getElementById('closePreviewBtn');
-
-            function openPreview(data) {
-                if (!data || !data.url) return;
-                previewTitle.textContent = data.name || 'Preview';
-                previewContent.innerHTML = '';
-                const url = data.url;
-                if (isVideoUrl(url)) {
-                    const video = document.createElement('video');
-                    video.src = url;
-                    video.controls = true;
-                    video.autoplay = true;
-                    video.muted = false;
-                    video.loop = false;
-                    video.style.width = '100%';
-                    video.style.borderRadius = '24px';
-                    previewContent.appendChild(video);
-                } else {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.alt = data.name || 'Preview';
-                    img.loading = 'lazy';
-                    img.onerror = () => {
-                        img.src =
-                            'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23eaeef9%22/%3E%3Ctext x=%2220%22 y=%22150%22 font-family=%22Inter%22 font-size=%2216%22 fill=%22%234a4566%22%3EPreview not available%3C/text%3E%3C/svg%3E';
-                    };
-                    previewContent.appendChild(img);
-                }
-                previewModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closePreviewModal() {
-                previewModal.classList.remove('active');
-                document.body.style.overflow = '';
-                const v = previewContent.querySelector('video');
-                if (v) { v.pause();
-                    v.currentTime = 0; }
-            }
-
-            // --------------------------------------------------------------
-            // 5. EVENT DELEGATION
-            // --------------------------------------------------------------
-            document.addEventListener('click', function(e) {
-                // Preview button
-                const previewBtn = e.target.closest('.btn-preview');
-                if (previewBtn) {
-                    e.preventDefault();
-                    const dataAttr = previewBtn.getAttribute('data-preview');
-                    if (dataAttr) {
-                        try { openPreview(JSON.parse(dataAttr)); } catch (_) {}
-                    }
+        // ----- COUNTDOWN (10 MIN) -----
+        function startCountdown(minutes = 10) {
+            let totalSeconds = minutes * 60;
+            const countdownEl = document.getElementById('countdown');
+            if (!countdownEl) return;
+            const interval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(interval);
+                    countdownEl.innerText = '00:00';
                     return;
                 }
+                totalSeconds--;
+                const mins = Math.floor(totalSeconds / 60);
+                const secs = totalSeconds % 60;
+                countdownEl.innerText = `${mins.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}`;
+            }, 1000);
+        }
 
-                // Buy now button → direct to Telegram DM with product info
-                const buyBtn = e.target.closest('.btn-buy');
-                if (buyBtn) {
-                    e.preventDefault();
-                    const dataAttr = buyBtn.getAttribute('data-product');
-                    if (dataAttr) {
-                        try {
-                            const prodData = JSON.parse(dataAttr);
-                            const fullProduct = products.find(p => p.id === prodData.id);
-                            const target = fullProduct || prodData;
-                            const message = buildPurchaseMessage(target);
-                            openTelegramDM(message);
-                        } catch (_) {}
-                    }
-                    return;
-                }
+        // ----- INIT -----
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update current time
+            const d = new Date();
+            document.getElementById('current-time').innerText = `${d.getHours().toString().padStart(2,'0')}:${d.getMinutes().toString().padStart(2,'0')}`;
+            setInterval(() => {
+                const d2 = new Date();
+                document.getElementById('current-time').innerText = `${d2.getHours().toString().padStart(2,'0')}:${d2.getMinutes().toString().padStart(2,'0')}`;
+            }, 60000);
 
-                // Close preview on overlay click
-                if (e.target === previewModal) closePreviewModal();
-            });
+            renderAllProducts();
+            document.getElementById('searchInput').addEventListener('input', searchProducts);
+           
+            // Notifications every 8s
+            setInterval(addRandomNotification, 8000);
+            addRandomNotification();
 
-            // ESC to close preview
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    if (previewModal.classList.contains('active')) closePreviewModal();
-                }
-            });
+            startCountdown(10);
 
-            closePreview.addEventListener('click', closePreviewModal);
-
-            console.log('✨ ÆON store loaded · Buy now → direct Telegram DM with product info ✅');
-        })();
+            // Also attach fallback to static videos (bundles, all-access)
+            attachVideoFallback();
+        });
     </script>
-
 </body>
 </html>
